@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="index.css">
+    <title>Title</title>
+</head>
+<body>
+
+
+<div class="employee-container">
+    <ul class="employee-list" id="employeeList">
+    </ul>
+    <a class="open-modal" id="openModal">Добавить</a>
+</div>
+
+<div id="modal" class="transparent" hidden>
+    <div class="modal-form-wrap">
+        <form id="modalForm">
+            <span id='closeModal' class="closeModal">x</span>
+            <label for="name">Фамилия Имя</label>
+            <input name="name" type="text" id="name">
+            <label for="position">Должность</label>
+            <input name="position" type="text" id="position">
+            <label for="email">Email</label>
+            <input name="email" type="text" id="email">
+            <label for="phone">Телефон</label>
+            <input name="phone" type="text" id="phone">
+            <input type="Submit" value="Сохранить">
+            <p class="errorNotification"></p>
+        </form>
+    </div>
+</div>
+<script type="module" src="index.js"></script>
+</body>
+</html>
